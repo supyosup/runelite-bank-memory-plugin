@@ -79,6 +79,10 @@ public class BankMemoryItemOverlay extends Overlay {
                     itemCountTooltipText = "Banked: " + bankItem.getQuantity();
                     break;
                 }
+		if (bankItem.getItemId() == (item.getId() - 1)) {
+		    itemCountTooltipText = "Banked: " + bankItem.getQuantity();
+		    break;
+		}
             }
         }
 
